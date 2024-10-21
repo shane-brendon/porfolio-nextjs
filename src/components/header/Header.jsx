@@ -1,4 +1,4 @@
-import "./$1.scss" 
+import './$1.scss'
 
 const $1 = () => {
   return (
