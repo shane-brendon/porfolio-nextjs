@@ -1,19 +1,22 @@
 #!/bin/bash
 
-# Check if the user provided an argument
-if [ -z "$1" ]; then
-  echo "Please provide a string as an argument."
+# Check if no arguments are provided
+if [ $# -eq 0 ]; then
+  echo "Please provide at least one component name as an argument."
   exit 1
 fi
 
-# Create a folder with the name of the string
-mkdir "$1"
+# Loop through all arguments (component names)
+for component in "$@"
+do
+  # Create a folder with the component name
+  mkdir "$component"
 
-# Create a JSX file inside the folder and add the content with the string as the component name
-cat <<EOL > "$1/$1.jsx"
-import "./$1.scss";
+  # Create a JSX file inside the folder and add the content with the string as the component name
+  cat <<EOL > "$component/$component.jsx"
+import "./$component.scss";
 
-const $1 = () => {
+const $component = () => {
   return (
     <div>
       <h2>hello world</h2>
@@ -21,11 +24,12 @@ const $1 = () => {
   );
 }
 
-export default $1;
+export default $component;
 EOL
 
-# Create a SCSS file inside the folder
-touch "$1/$1.scss"
+  # Create a SCSS file inside the folder
+  touch "$component/$component.scss"
 
-# Provide feedback
-echo "Created folder '$1' with $1.jsx and $1.scss"
+  # Provide feedback
+  echo "Created folder '$component' with $component.jsx and $component.scss"
+done
