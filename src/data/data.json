@@ -1,0 +1,114 @@
+{
+  "global": {
+    "socials": {
+      "github": {
+        "icon": "/images/icon-github.svg",
+        "link": "https://github.com/shane-brendon",
+        "active": true
+      },
+      "frontend-mentor": {
+        "icon": "/images/icon-frontend-mentor.svg",
+        "link": "https://www.frontendmentor.io/profile/shane-brendon",
+        "active": true
+      },
+      "linkedIn": {
+        "icon": "/images/icon-linkedin.svg",
+        "link": "https://mu.linkedin.com/in/shane-ramah-naik-50b023250?trk=people-guest_people_search-card",
+        "active": true
+      },
+      "twitter": {
+        "icon": "/images/icon-twitter.svg",
+        "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "active": true
+      }
+    },
+    "contact": {
+      "text": "Contact me",
+      "url": "/contact"
+    },
+    "experience": "Years of Experience"
+  },
+  "hero": {
+    "intro": {
+      "first_line": "Nice to meet you!",
+      "second_line": "I'm Adam Keyes",
+      "description": "Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.",
+      "images": {
+        "mobile": {
+          "url": "image-profile-mobile.webp",
+          "alt": "my profile picture"
+        },
+        "tablet": {
+          "url": "image-profile-tablet.webp",
+          "alt": "my profile picture"
+        },
+        "desktop": {
+          "url": "image-profile-desktop.webp",
+          "alt": "my profile picture"
+        }
+      }
+    }
+  },
+  "skills": [
+    {
+      "text": "HTML",
+      "experience": "4"
+    },
+    {
+      "text": "CSS",
+      "experience": "3"
+    },
+    {
+      "text": "Javascript",
+      "experience": "4"
+    },
+    {
+      "text": "Accessibility",
+      "experience": "4"
+    },
+    {
+      "text": "React",
+      "experience": "3"
+    },
+    {
+      "text": "Sass",
+      "experience": "3"
+    }
+  ],
+  "projects": {
+    "title": "Projects",
+    "project": {
+      "design_porfolio": [
+        {
+          "name": "Design Portfolio",
+          "technology": ["HTML", "Css"]
+        },
+        {
+          "name": "E-LEARNING LANDING PAGE",
+          "technology": ["HTML", "Css"]
+        },
+        {
+          "name": "TODO WEB APP",
+          "technology": ["HTML", "Css", "Javascript"]
+        },
+        {
+          "name": "ENTERTAINMENT WEB APP",
+          "technology": ["HTML", "Css", "Javascript"]
+        },
+        {
+          "name": "MEMORY GAME",
+          "technology": ["HTML", "Css", "Javascript"]
+        },
+        {
+          "name": "ART GALLERY SHOWCASE",
+          "technology": ["HTML", "Css", "Javascript"]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "description": "I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.",
+    "send": "Send message"
+  }
+}
