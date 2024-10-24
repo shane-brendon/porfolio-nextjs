@@ -1,0 +1,11 @@
+.btn--greenBar {
+  button,
+  a {
+    display: inline-block;
+    padding-bottom: 0.625rem;
+    border-bottom: 0.125rem solid $green;
+    font-size: 1.125rem;
+    color: $white;
+    background-color: transparent;
+  }
+}

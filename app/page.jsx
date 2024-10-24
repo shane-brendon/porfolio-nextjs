@@ -1,9 +1,9 @@
-import Header from '@/src/components/header/header'
+import BtnGreenBar from '@/src/lib/BtnGreenBar/BtnGreenBar'
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <BtnGreenBar text={'contact'} type={'btn'} />
     </>
   )
 }
