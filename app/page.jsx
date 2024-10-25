@@ -1,9 +1,9 @@
-import BtnGreenBar from '@/src/lib/BtnGreenBar/BtnGreenBar'
+import Projects from '@/src/components/Projects/Projects'
 
 export default function Home() {
   return (
-    <>
-      <BtnGreenBar text={'contact'} type={'btn'} />
-    </>
+    <div className='container'>
+      <Projects />
+    </div>
   )
 }

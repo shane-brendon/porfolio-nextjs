@@ -1,7 +1,6 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
   background-color: $black;
   color: $white;
 }
@@ -25,4 +24,51 @@ span.tags {
 .text {
   font-size: 18px;
   line-height: 28px;
+}
+
+.title {
+  font-size: 5.5rem;
+  @media screen and (max-width: $mobile) {
+    font-size: 4.5rem;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 2.5rem;
+  }
+}
+
+.container {
+  max-width: calc(1440px - (165px * 2));
+  padding: 0 32px;
+  margin: 0 auto;
+
+  @media screen and (max-width: $mobile) {
+    padding: 0 16px;
+  }
+}
+
+// element that are specific to a certain screem size
+.tablet,
+.mobile,
+.mobile-tablet {
+  display: none;
+}
+
+@media screen and (max-width: $tablet) {
+  .tablet,
+  .mobile-tablet {
+    display: block;
+  }
+  .desk {
+    display: none;
+  }
+}
+@media screen and (max-width: $mobile) {
+  .tablet,
+  .mobile-tablet,
+  .desk {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }

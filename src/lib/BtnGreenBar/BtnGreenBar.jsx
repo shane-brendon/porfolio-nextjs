@@ -1,7 +1,7 @@
 import './BtnGreenBar.scss'
 import Link from 'next/link'
 
-const BtnGreenBar = ({ text, type }) => {
+const BtnGreenBar = ({ text, type, link = '/', blank = false }) => {
   return (
     <div className='btn--greenBar'>
       {(type === 'btn' || type === 'submit') && (
@@ -9,7 +9,11 @@ const BtnGreenBar = ({ text, type }) => {
           <span>{text}</span>
         </button>
       )}
-      {type === 'link' && <Link href={'/'}>{text}</Link>}
+      {type === 'link' && (
+        <Link href={link} target={blank ? '_blank' : ''}>
+          {text}
+        </Link>
+      )}
     </div>
   )
 }

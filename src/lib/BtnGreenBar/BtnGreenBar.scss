@@ -1,11 +1,19 @@
 .btn--greenBar {
+  display: inline-block;
+
   button,
   a {
-    display: inline-block;
+    border: none;
     padding-bottom: 0.625rem;
     border-bottom: 0.125rem solid $green;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    font-weight: 700;
     color: $white;
     background-color: transparent;
+
+    &:hover,
+    &:active {
+      color: $green;
+    }
   }
 }
