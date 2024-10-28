@@ -1,15 +1,21 @@
 import './skills.scss'
-import skills from '../../data/data.json'
+import content from '../../data/data.json'
 
 const Skills = () => {
-  // console.log(skills)
+  const { global, skills } = content
   return (
-    <div>
+    <section id='skill-component'>
       <ul>
-        <li></li>
+        {skills.map((skill, index) => (
+          <li key={index}>
+            <span className='skill--title'>{skill.text}</span>
+            <span className='skill--experience'>
+              {skill.experience} {global.experience}
+            </span>
+          </li>
+        ))}
       </ul>
-    </div>
+    </section>
   )
 }
-
 export default Skills

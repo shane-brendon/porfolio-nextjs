@@ -4,15 +4,15 @@ import Image from 'next/image'
 import BtnGreenBar from '../../lib/BtnGreenBar/BtnGreenBar'
 
 const Projects = () => {
-  const data = { ...content.global, ...content.projects }
+  const { global, projects } = content
   return (
-    <section>
+    <section id='project-component'>
       <div className='project-title'>
-        <h2 className='title'>{data.title}</h2>
-        <BtnGreenBar text={data.contact.text} type={'link'} />
+        <h2 className='title'>{projects.title}</h2>
+        <BtnGreenBar text={global.contact.text} type={'link'} />
       </div>
       <div className='project-grid'>
-        {data.projects.map((project, index) => (
+        {projects.projects.map((project, index) => (
           <div key={index}>
             <Image
               src={project.image.large}
@@ -30,13 +30,13 @@ const Projects = () => {
             </div>
             <div className='buttons mobile-tablet'>
               <BtnGreenBar
-                text={data.external.project}
+                text={projects.external.project}
                 type={'link'}
                 link={project.links.project}
                 blank
               />
               <BtnGreenBar
-                text={data.external.code}
+                text={projects.external.code}
                 type={'link'}
                 link={project.links.code}
                 blank

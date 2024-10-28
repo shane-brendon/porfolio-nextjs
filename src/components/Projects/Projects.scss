@@ -1,54 +1,56 @@
-.project-title {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5rem;
-  align-items: center;
-
-  @media screen and (max-width: $tablet) {
-    margin-bottom: 3.75rem;
-  }
-  @media screen and (max-width: $mobile) {
-    margin-bottom: 2.5rem;
-  }
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.875rem;
-  row-gap: 4.375rem;
-  img {
-    height: auto;
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .description {
-    &--name {
-      font-weight: 600;
-      margin-top: 1.25rem;
-      font-size: 1.5rem;
-      display: block;
-    }
-
-    &--tags li {
-      padding-right: 1.125rem;
-      display: inline-block;
-
-      font-weight: 400;
-      font-size: 1.125rem;
-
-      margin-top: 0.5rem;
-    }
-  }
-
-  .mobile-tablet {
+#project-component {
+  .project-title {
     display: flex;
-    gap: 1.25rem;
-    margin-top: 1.25rem;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    align-items: center;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 3.75rem;
+    }
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 2.5rem;
+    }
   }
-  @media screen and (max-width: $mobile) {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.875rem;
+    row-gap: 4.375rem;
+    img {
+      height: auto;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .description {
+      &--name {
+        font-weight: 600;
+        margin-top: 1.25rem;
+        font-size: 1.5rem;
+        display: block;
+      }
+
+      &--tags li {
+        padding-right: 1.125rem;
+        display: inline-block;
+
+        font-weight: 400;
+        font-size: 1.125rem;
+
+        margin-top: 0.5rem;
+      }
+    }
+
+    .mobile-tablet {
+      display: flex;
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    @media screen and (max-width: $mobile) {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
   }
 }
