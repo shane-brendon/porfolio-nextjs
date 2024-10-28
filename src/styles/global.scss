@@ -4,7 +4,9 @@ body {
   background-color: $black;
   color: $white;
 }
-
+li {
+  list-style: none;
+}
 * {
   box-sizing: border-box;
   padding: 0;

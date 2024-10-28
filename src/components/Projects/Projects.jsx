@@ -1,19 +1,25 @@
 import './Projects.scss'
-import { projects, global } from '../../data/data.json'
+import content from '../../data/data.json'
 import Image from 'next/image'
 import BtnGreenBar from '../../lib/BtnGreenBar/BtnGreenBar'
 
-const Projects = ({ data = { projects, ...global } }) => {
+const Projects = () => {
+  const data = { ...content.global, ...content.projects }
   return (
     <section>
       <div className='project-title'>
-        <h2 className='title'>{data.projects.title}</h2>
+        <h2 className='title'>{data.title}</h2>
         <BtnGreenBar text={data.contact.text} type={'link'} />
       </div>
       <div className='project-grid'>
-        {data.projects.projects.map((project, index) => (
+        {data.projects.map((project, index) => (
           <div key={index}>
-            <Image src={project.image.large} width={545} height={400} />
+            <Image
+              src={project.image.large}
+              width={545}
+              height={400}
+              alt='project i worked on'
+            />
             <div className='description'>
               <span className='description--name'>{project.name}</span>
               <div className='description--tags'>
@@ -24,13 +30,13 @@ const Projects = ({ data = { projects, ...global } }) => {
             </div>
             <div className='buttons mobile-tablet'>
               <BtnGreenBar
-                text={projects.external.project}
+                text={data.external.project}
                 type={'link'}
                 link={project.links.project}
                 blank
               />
               <BtnGreenBar
-                text={projects.external.code}
+                text={data.external.code}
                 type={'link'}
                 link={project.links.code}
                 blank
