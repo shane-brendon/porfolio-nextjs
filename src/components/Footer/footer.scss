@@ -1,28 +1,28 @@
 footer {
   background-color: $darkgrey;
-  margin-top: 140px;
-  padding-top: 85px;
-  .container {
+  margin-top: 8.75rem;
+  padding-top: 5.3125rem;
+  .container .top {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 90px;
+    padding-bottom: 5.625rem;
     > div {
       width: max-content;
     }
     span p {
-      max-width: 445px;
-      font-size: 18px;
+      max-width: 27.8125rem;
+      font-size: 1.125rem;
     }
     input,
     textarea {
-      height: 40px;
-      margin-bottom: 20px;
+      height: 2.5rem;
+      margin-bottom: 1.25rem;
       color: $grey;
-      width: 445px;
+      width: 27.8125rem;
     }
     textarea {
-      height: 100px;
-      margin-bottom: 32px;
+      height: 6.25rem;
+      margin-bottom: 2rem;
     }
     .submit-btn {
       display: flex;
@@ -30,21 +30,41 @@ footer {
     }
   }
 
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2.8125rem 0 5.625rem;
+    border-top: 0.0625rem solid $white;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    &--socials {
+      display: flex;
+      gap: 1.25rem;
+    }
+  }
+
   @media screen and (max-width: $tablet) {
-    margin-top: 100px;
-    padding-top: 60px;
-    .container {
+    margin-top: 6.25rem;
+    padding-top: 3.75rem;
+    .container .top {
       flex-direction: column;
       align-items: center;
-      gap: 30px;
+      gap: 1.875rem;
     }
     .right {
       text-align: center;
     }
+    .bottom {
+      padding: 1.875rem 0 2.5rem;
+    }
   }
   @media screen and (max-width: $mobile) {
-    margin-top: 80px;
-    .container {
+    margin-top: 5rem;
+    .container .top {
       input,
       textarea {
         width: 100%;
@@ -52,6 +72,12 @@ footer {
       > div {
         width: 100%;
       }
+    }
+    .bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 3.75rem;
     }
   }
 }
