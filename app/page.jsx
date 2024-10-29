@@ -5,8 +5,8 @@ import Footer from '@/src/components/Footer/Footer'
 export default function Home() {
   return (
     <main>
-      {/* <Skills />
-      <Projects /> */}
+      <Skills />
+      <Projects />
       <Footer />
     </main>
   )
