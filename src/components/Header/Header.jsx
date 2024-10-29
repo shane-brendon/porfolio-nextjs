@@ -1,6 +1,6 @@
 import './header.scss'
 
-const header = () => {
+const Header = () => {
   return (
     <div>
       <h2>hello world</h2>
@@ -8,4 +8,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header

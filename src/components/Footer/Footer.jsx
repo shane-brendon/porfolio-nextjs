@@ -1,6 +1,6 @@
 import './footer.scss'
 
-const footer = () => {
+const Footer = () => {
   return (
     <div>
       <h2>hello world</h2>
@@ -8,4 +8,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer
