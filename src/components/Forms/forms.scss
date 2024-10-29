@@ -1,0 +1,11 @@
+#contact-form {
+  label {
+    display: none;
+  }
+  input,
+  textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $white;
+  }
+}

@@ -4,10 +4,10 @@ import Footer from '@/src/components/Footer/Footer'
 
 export default function Home() {
   return (
-    <div className='container'>
-      <Skills />
-      <Projects />
+    <main>
+      {/* <Skills />
+      <Projects /> */}
       <Footer />
-    </div>
+    </main>
   )
 }

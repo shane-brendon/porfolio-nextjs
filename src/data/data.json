@@ -159,6 +159,9 @@
   "footer": {
     "contact": "Contact",
     "description": "I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.",
-    "send": "Send message"
+    "send": "Send message",
+    "name": "Name",
+    "message": "Mesasge",
+    "email": "Email"
   }
 }

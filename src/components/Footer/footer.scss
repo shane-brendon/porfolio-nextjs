@@ -1,0 +1,57 @@
+footer {
+  background-color: $darkgrey;
+  margin-top: 140px;
+  padding-top: 85px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+    > div {
+      width: max-content;
+    }
+    span p {
+      max-width: 445px;
+      font-size: 18px;
+    }
+    input,
+    textarea {
+      height: 40px;
+      margin-bottom: 20px;
+      color: $grey;
+      width: 445px;
+    }
+    textarea {
+      height: 100px;
+      margin-bottom: 32px;
+    }
+    .submit-btn {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin-top: 100px;
+    padding-top: 60px;
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .right {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    margin-top: 80px;
+    .container {
+      input,
+      textarea {
+        width: 100%;
+      }
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}
