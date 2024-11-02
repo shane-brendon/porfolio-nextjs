@@ -1,0 +1,91 @@
+#hero {
+  height: 60vh;
+  padding-top: 8.125rem;
+
+  .container {
+    position: relative;
+  }
+
+  .profile-picture img {
+    position: absolute;
+    top: -210px;
+    right: 0;
+  }
+
+  .content {
+    max-width: 709px;
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    padding-bottom: 30px;
+    letter-spacing: -2.5px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .author--name {
+    position: relative;
+    -webkit-text-stroke: 2px black;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 5px;
+      background-color: $green;
+      bottom: 6px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  .description {
+    max-width: 27.8125rem;
+    padding-bottom: 65px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    .content {
+      max-width: 445px;
+      position: relative;
+      top: -50px;
+    }
+
+    h1 {
+      font-size: 72px;
+    }
+    .author--name {
+      -webkit-text-stroke: unset;
+    }
+    img {
+      max-width: 332px;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 10px;
+    }
+
+    .content {
+      max-width: 445px;
+    }
+
+    h1 {
+      font-size: 72px;
+    }
+    .author--name {
+      -webkit-text-stroke: unset;
+    }
+    img {
+      max-width: 174px;
+      height: auto;
+      position: static !important;
+    }
+  }
+}

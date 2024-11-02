@@ -40,9 +40,11 @@ span.tags {
 
 .container {
   max-width: calc(1440px - (165px * 2));
-  padding: 0 32px;
   margin: 0 auto;
 
+  @media screen and (max-width: 1440px) {
+    padding: 0 30px;
+  }
   @media screen and (max-width: $mobile) {
     padding: 0 16px;
   }
@@ -73,4 +75,14 @@ span.tags {
   .mobile {
     display: block;
   }
+}
+
+//header
+header {
+  .links {
+    padding: 40px 0 0;
+    border: 0;
+  }
+  position: relative;
+  z-index: 1;
 }
