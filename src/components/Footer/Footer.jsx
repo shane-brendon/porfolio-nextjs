@@ -1,6 +1,11 @@
 import './footer.scss'
 import ContactForm from '../Forms/ContactForm'
 import content from '../../data/data.json'
+import Link from 'next/link'
+import IconFrontendMentor from '../assets/IconFrontEndMentor'
+import IconGithub from '../assets/IconGithub'
+import IconLinkedin from '../assets/IconLinkedIn'
+import IconTwitter from '../assets/IconTwitter'
 
 const Footer = () => {
   const data = content.footer
@@ -19,18 +24,39 @@ const Footer = () => {
             <ContactForm data={data} />
           </div>
         </div>
-
-        <div className='bottom'>
-          <h3 className='bottom--name'>adamkeyes</h3>
-          <div className='bottom--socials'>
-            <div className='facebook'>F</div>
-            <div className='facebook'>F</div>
-            <div className='facebook'>F</div>
-            <div className='facebook'>F</div>
-          </div>
-        </div>
+        <LinksComponent />
       </div>
     </footer>
+  )
+}
+
+export const LinksComponent = () => {
+  return (
+    <div id='links' className='links'>
+      <h3 className='links--name'>adamkeyes</h3>
+      <ul className='links--socials'>
+        <li className='facebook'>
+          <Link href={'/'}>
+            <IconFrontendMentor />
+          </Link>
+        </li>
+        <li className='facebook'>
+          <Link href={'/'}>
+            <IconGithub />
+          </Link>
+        </li>
+        <li className='facebook'>
+          <Link href={'/'}>
+            <IconLinkedin />
+          </Link>
+        </li>
+        <li className='facebook'>
+          <Link href={'/'}>
+            <IconTwitter />
+          </Link>
+        </li>
+      </ul>
+    </div>
   )
 }
 

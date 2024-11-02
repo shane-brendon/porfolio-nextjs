@@ -30,23 +30,6 @@ footer {
     }
   }
 
-  .bottom {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 2.8125rem 0 5.625rem;
-    border-top: 0.0625rem solid $white;
-
-    h3 {
-      font-size: 2rem;
-      font-weight: 700;
-    }
-    &--socials {
-      display: flex;
-      gap: 1.25rem;
-    }
-  }
-
   @media screen and (max-width: $tablet) {
     margin-top: 6.25rem;
     padding-top: 3.75rem;
@@ -79,5 +62,23 @@ footer {
       gap: 1rem;
       padding-bottom: 3.75rem;
     }
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2.8125rem 0 5.625rem;
+  border-top: 0.0625rem solid $white;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &--socials {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
   }
 }
