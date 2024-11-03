@@ -1,6 +1,8 @@
 import BtnGreenBar from '@/src/lib/BtnGreenBar/BtnGreenBar'
 import './hero.scss'
 import Image from 'next/image'
+import RingPattern from '../assets/RingPattern'
+import CirclePattern from '../assets/CirclePattern'
 
 const Hero = () => {
   return (
@@ -38,8 +40,14 @@ const Hero = () => {
               height={720}
               sizes='(max-width: 640px) 174px, (max-width: 821px) 322px, 600px'
             />
+            <div className='circlePattern--hero'>
+              <CirclePattern />
+            </div>
           </picture>
         </div>
+      </div>
+      <div className='ringPattern--hero'>
+        <RingPattern />
       </div>
     </section>
   )

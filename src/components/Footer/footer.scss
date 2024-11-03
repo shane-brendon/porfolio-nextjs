@@ -2,6 +2,7 @@ footer {
   background-color: $darkgrey;
   margin-top: 8.75rem;
   padding-top: 5.3125rem;
+  position: relative;
   .container .top {
     display: flex;
     justify-content: space-between;
@@ -29,6 +30,11 @@ footer {
       justify-content: flex-end;
     }
   }
+  .ringPattern--footer {
+    position: absolute;
+    bottom: 13.125rem;
+    left: -15rem;
+  }
 
   @media screen and (max-width: $tablet) {
     margin-top: 6.25rem;
@@ -43,6 +49,11 @@ footer {
     }
     .bottom {
       padding: 1.875rem 0 2.5rem;
+    }
+    .ringPattern--footer {
+      position: absolute;
+      bottom: 12.5rem;
+      left: -25rem;
     }
   }
   @media screen and (max-width: $mobile) {
@@ -61,6 +72,11 @@ footer {
       align-items: center;
       gap: 1rem;
       padding-bottom: 3.75rem;
+    }
+    .ringPattern--footer {
+      position: absolute;
+      bottom: 18.75rem;
+      left: -18.75rem;
     }
   }
 }
@@ -84,6 +100,6 @@ footer {
   @media screen and (max-width: $mobile) {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
   }
 }

@@ -1,15 +1,12 @@
 #skill-component {
   padding: 6.5625rem 0 4.375rem;
+  position: relative;
   ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 3.75rem;
     padding-top: 4.375rem;
     border-top: 0.0625rem solid $white;
-
-    @media screen and (max-width: $tablet) {
-      grid-template-columns: repeat(2, 1fr);
-    }
 
     @media screen and (max-width: $mobile) {
       grid-template-columns: repeat(1, 1fr);
@@ -29,7 +26,28 @@
       padding: 2.5rem 0;
     }
   }
+  .ringPattern--skill {
+    position: absolute;
+    bottom: 0;
+    right: -11.5625rem;
+  }
 
+  @media screen and (max-width: $tablet) {
+    padding-top: 4rem;
+    .ringPattern--skill {
+      position: absolute;
+      bottom: 0;
+      right: -21.875rem;
+    }
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    ul {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
   .skill {
     &--title {
       font-size: 3rem;

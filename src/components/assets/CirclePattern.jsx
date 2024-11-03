@@ -6,8 +6,8 @@ const CirclePattern = (props) => {
     cx = 830.5,
     cy = 585.5,
     r = 64,
-    width = 129,
-    height = 129,
+    width = 130,
+    height = 130,
     className,
   } = props
   return (

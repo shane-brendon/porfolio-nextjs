@@ -6,6 +6,7 @@ import IconFrontendMentor from '../assets/IconFrontEndMentor'
 import IconGithub from '../assets/IconGithub'
 import IconLinkedin from '../assets/IconLinkedIn'
 import IconTwitter from '../assets/IconTwitter'
+import RingPattern from '../assets/RingPattern'
 
 const Footer = () => {
   const data = content.footer
@@ -24,6 +25,12 @@ const Footer = () => {
             <ContactForm data={data} />
           </div>
         </div>
+      </div>
+
+      <div className='ringPattern--footer'>
+        <RingPattern />
+      </div>
+      <div className='container'>
         <LinksComponent />
       </div>
     </footer>

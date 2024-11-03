@@ -1,5 +1,6 @@
 import './skills.scss'
 import content from '../../data/data.json'
+import RingPattern from '../assets/RingPattern'
 
 const Skills = () => {
   const { global, skills } = content
@@ -16,6 +17,9 @@ const Skills = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className='ringPattern--skill'>
+        <RingPattern />
       </div>
     </section>
   )
