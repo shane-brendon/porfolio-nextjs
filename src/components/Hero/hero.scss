@@ -66,18 +66,25 @@
     }
   }
   @media screen and (max-width: $mobile) {
+    padding: 0;
+    text-align: center;
     .container {
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
       padding: 10px;
     }
 
     .content {
-      max-width: 445px;
+      max-width: 343px;
     }
 
     h1 {
-      font-size: 72px;
+      font-size: 40px;
+    }
+    .description {
+      font-size: 1rem;
+      padding-bottom: 2rem;
     }
     .author--name {
       -webkit-text-stroke: unset;
@@ -85,7 +92,8 @@
     img {
       max-width: 174px;
       height: auto;
-      position: static !important;
+      position: relative !important;
+      top: -100px !important;
     }
   }
 }

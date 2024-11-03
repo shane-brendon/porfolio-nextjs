@@ -85,4 +85,9 @@ header {
   }
   position: relative;
   z-index: 1;
+  @media screen and (max-width: $mobile) {
+    .links {
+      padding-top: 20px;
+    }
+  }
 }
