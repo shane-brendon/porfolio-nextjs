@@ -26,18 +26,27 @@
       padding: 2.5rem 0;
     }
   }
-  .ringPattern--skill {
+  .ringPattern__skill {
     position: absolute;
     bottom: 0;
-    right: -11.5625rem;
+    right: 0;
+    overflow: hidden;
+    &--container {
+      position: relative;
+      right: -11.5625rem;
+    }
   }
 
   @media screen and (max-width: $tablet) {
     padding-top: 4rem;
-    .ringPattern--skill {
+    .ringPattern__skill {
       position: absolute;
       bottom: 0;
-      right: -21.875rem;
+
+      &--container {
+        position: relative;
+        right: -21.875rem;
+      }
     }
     ul {
       grid-template-columns: repeat(2, 1fr);

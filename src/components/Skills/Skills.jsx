@@ -18,8 +18,10 @@ const Skills = () => {
           ))}
         </ul>
       </div>
-      <div className='ringPattern--skill'>
-        <RingPattern />
+      <div className='ringPattern__skill'>
+        <div className='ringPattern__skill--container'>
+          <RingPattern />
+        </div>
       </div>
     </section>
   )

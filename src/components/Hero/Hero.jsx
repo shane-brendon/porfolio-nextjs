@@ -40,14 +40,18 @@ const Hero = () => {
               height={720}
               sizes='(max-width: 640px) 174px, (max-width: 821px) 322px, 600px'
             />
-            <div className='circlePattern--hero'>
-              <CirclePattern />
+            <div className='circlePattern__hero'>
+              <div className='circlePattern__hero--container'>
+                <CirclePattern />
+              </div>
             </div>
           </picture>
         </div>
       </div>
-      <div className='ringPattern--hero'>
-        <RingPattern />
+      <div className='ringPattern__hero'>
+        <div className='ringPattern__hero--container'>
+          <RingPattern />
+        </div>
       </div>
     </section>
   )

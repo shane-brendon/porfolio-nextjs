@@ -27,9 +27,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='ringPattern--footer'>
+      {/* <div className='ringPattern--footer'>
         <RingPattern />
-      </div>
+      </div> */}
       <div className='container'>
         <LinksComponent />
       </div>
