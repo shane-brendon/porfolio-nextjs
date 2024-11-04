@@ -15,19 +15,36 @@ const Projects = () => {
         <div className='project-grid'>
           {projects.projects.map((project, index) => (
             <div key={index}>
-              <Image
-                src={project.image.large}
-                width={545}
-                height={400}
-                alt='project i worked on'
-              />
+              <div className='img-container'>
+                <div className='buttons-hover desktop'>
+                  <BtnGreenBar
+                    text={projects.external.project}
+                    type={'link'}
+                    link={project.links.project}
+                    blank
+                  />
+                  <BtnGreenBar
+                    text={projects.external.code}
+                    type={'link'}
+                    link={project.links.code}
+                    blank
+                  />
+                </div>
+                <Image
+                  src={project.image.large}
+                  width={545}
+                  height={400}
+                  alt='project i worked on'
+                />
+              </div>
+
               <div className='description'>
                 <span className='description--name'>{project.name}</span>
-                <div className='description--tags'>
+                <ul className='description--tags'>
                   {project.technology.map((tech, index) => (
-                    <span key={index}>{tech}</span>
+                    <li key={index}>{tech}</li>
                   ))}
-                </div>
+                </ul>
               </div>
               <div className='buttons mobile-tablet'>
                 <BtnGreenBar

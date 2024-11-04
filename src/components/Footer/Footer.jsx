@@ -14,7 +14,6 @@ const Footer = () => {
     <footer id='footer'>
       <div className='container'>
         <div className='top'>
-          {' '}
           <div className='right'>
             <h2 className='title'>{data.contact}</h2>
             <span>
@@ -27,9 +26,11 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* <div className='ringPattern--footer'>
-        <RingPattern />
-      </div> */}
+      <div className='ringPattern__footer'>
+        <div className='ringPattern__footer--container'>
+          <RingPattern />
+        </div>
+      </div>
       <div className='container'>
         <LinksComponent />
       </div>

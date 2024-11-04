@@ -30,10 +30,13 @@ footer {
       justify-content: flex-end;
     }
   }
-  .ringPattern--footer {
+  .ringPattern__footer {
     position: absolute;
     bottom: 13.125rem;
-    left: -15rem;
+    &--container {
+      position: relative;
+      left: -15rem;
+    }
   }
 
   @media screen and (max-width: $tablet) {
@@ -50,10 +53,12 @@ footer {
     .bottom {
       padding: 1.875rem 0 2.5rem;
     }
-    .ringPattern--footer {
+    .ringPattern__footer {
       position: absolute;
       bottom: 12.5rem;
-      left: -25rem;
+      &--container {
+        left: -25rem;
+      }
     }
   }
   @media screen and (max-width: $mobile) {
@@ -73,10 +78,13 @@ footer {
       gap: 1rem;
       padding-bottom: 3.75rem;
     }
-    .ringPattern--footer {
+    .ringPattern__footer {
       position: absolute;
       bottom: 18.75rem;
-      left: -18.75rem;
+      width: 300px;
+      &--container {
+        left: -18.75rem;
+      }
     }
   }
 }

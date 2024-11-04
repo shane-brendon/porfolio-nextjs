@@ -123,12 +123,12 @@
     .author--name {
       -webkit-text-stroke: unset;
     }
-    .ringPattern--hero {
+    .ringPattern__hero {
       position: absolute;
+      width: 300px !important;
       top: 6.6875rem;
-      width: 300px;
       &--container {
-        left: -27.4375rem;
+        left: -20.4375rem;
       }
     }
     .circlePattern__hero {
