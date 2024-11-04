@@ -17,7 +17,7 @@ footer {
     input,
     textarea {
       height: 2.5rem;
-      margin-bottom: 1.25rem;
+      margin-bottom: 2rem;
       color: $grey;
       width: 27.8125rem;
     }
@@ -28,6 +28,7 @@ footer {
     .submit-btn {
       display: flex;
       justify-content: flex-end;
+      margin-top: 15px;
     }
   }
   .ringPattern__footer {
