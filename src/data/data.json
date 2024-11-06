@@ -26,24 +26,25 @@
       "text": "Contact me",
       "url": "/contact"
     },
-    "experience": "Years of Experience"
+    "experience": "Years of Experience",
+    "author": "adamkeyes"
   },
   "hero": {
     "intro": {
-      "first_line": "Nice to meet you!",
-      "second_line": "I'm Adam Keyes",
+      "first_line": "Nice to meet you! i'm",
+      "second_line": " Adam Keyes",
       "description": "Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.",
       "images": {
         "mobile": {
-          "url": "image-profile-mobile.webp",
+          "url": "/images/image-profile-mobile.webp",
           "alt": "my profile picture"
         },
         "tablet": {
-          "url": "image-profile-tablet.webp",
+          "url": "/images/image-profile-tablet.webp",
           "alt": "my profile picture"
         },
         "desktop": {
-          "url": "image-profile-desktop.webp",
+          "url": "/images/image-profile-desktop.webp",
           "alt": "my profile picture"
         }
       }
@@ -52,27 +53,27 @@
   "skills": [
     {
       "text": "HTML",
-      "experience": "4"
+      "experience": "2"
     },
     {
       "text": "CSS",
-      "experience": "3"
+      "experience": "2"
     },
     {
       "text": "Javascript",
-      "experience": "4"
+      "experience": "2"
     },
     {
-      "text": "Accessibility",
-      "experience": "4"
+      "text": "Jquery",
+      "experience": "2"
     },
     {
       "text": "React",
-      "experience": "3"
+      "experience": "2"
     },
     {
       "text": "Sass",
-      "experience": "3"
+      "experience": "2"
     }
   ],
   "projects": {

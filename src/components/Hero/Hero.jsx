@@ -3,38 +3,37 @@ import './hero.scss'
 import Image from 'next/image'
 import RingPattern from '../assets/RingPattern'
 import CirclePattern from '../assets/CirclePattern'
+import content from '../../data/data.json'
 
 const Hero = () => {
+  const data = content.hero.intro
   return (
     <section id='hero'>
       <div className='container'>
         <div className='content'>
           <h1 className='title'>
-            Nice to meet you! im{' '}
-            <span className='author--name'>Adam keyes</span>
+            {data.first_line}
+            <span className='author--name'>{data.second_line}</span>
           </h1>
 
           <div className='description'>
-            <p>
-              Based in the UK, I’m a front-end developer passionate about
-              building accessible web apps that users love.
-            </p>
+            <p>{data.description}</p>
           </div>
 
-          <BtnGreenBar text={'contact me'} type={'btn'} />
+          <BtnGreenBar text={'contact me'} type={'link'} link='#footer' />
         </div>
         <div className='profile-picture'>
           <picture>
             <source
               media='(max-width: 640px)'
-              srcSet='/images/image-profile-mobile.webp'
+              srcSet={data.images.mobile.url}
             />
             <source
               media='(max-width: 821px)'
-              srcSet='/images/image-profile-tablet.webp'
+              srcSet={data.images.tablet.url}
             />
             <Image
-              src='/images/image-profile-desktop.webp'
+              src={data.images.desktop.url}
               alt='Profile picture'
               width={445}
               height={720}

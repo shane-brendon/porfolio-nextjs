@@ -10,7 +10,11 @@ const Projects = () => {
       <div className='container'>
         <div className='project-title'>
           <h2 className='title'>{projects.title}</h2>
-          <BtnGreenBar text={global.contact.text} type={'link'} />
+          <BtnGreenBar
+            text={global.contact.text}
+            type={'link'}
+            link='#footer'
+          />
         </div>
         <div className='project-grid'>
           {projects.projects.map((project, index) => (

@@ -39,26 +39,27 @@ const Footer = () => {
 }
 
 export const LinksComponent = () => {
+  const data = content.global.author
   return (
     <div id='links' className='links'>
-      <h3 className='links--name'>adamkeyes</h3>
+      <h3 className='links--name'>{data}</h3>
       <ul className='links--socials'>
-        <li className='facebook'>
+        <li className='fontend-mentors'>
           <Link href={'/'}>
             <IconFrontendMentor />
           </Link>
         </li>
-        <li className='facebook'>
+        <li className='github'>
           <Link href={'/'}>
             <IconGithub />
           </Link>
         </li>
-        <li className='facebook'>
+        <li className='linkedin'>
           <Link href={'/'}>
             <IconLinkedin />
           </Link>
         </li>
-        <li className='facebook'>
+        <li className='twitter'>
           <Link href={'/'}>
             <IconTwitter />
           </Link>
