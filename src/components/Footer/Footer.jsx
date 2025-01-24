@@ -44,24 +44,14 @@ export const LinksComponent = () => {
     <div id='links' className='links'>
       <h3 className='links--name'>{data}</h3>
       <ul className='links--socials'>
-        <li className='fontend-mentors'>
-          <Link href={'/'}>
-            <IconFrontendMentor />
-          </Link>
-        </li>
         <li className='github'>
-          <Link href={'/'}>
+          <Link href={'https://github.com/shane-brendon'} target='blank_'>
             <IconGithub />
           </Link>
         </li>
-        <li className='linkedin'>
-          <Link href={'/'}>
+        <li className='linkedin' target='blank_'>
+          <Link href={'https://www.linkedin.com/in/shane-ramah-naik-50b023250/?originalSubdomain=mu'}>
             <IconLinkedin />
-          </Link>
-        </li>
-        <li className='twitter'>
-          <Link href={'/'}>
-            <IconTwitter />
           </Link>
         </li>
       </ul>
