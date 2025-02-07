@@ -1,9 +1,12 @@
+'use client'
+
 import BtnGreenBar from '@/src/lib/BtnGreenBar/BtnGreenBar'
 import './hero.scss'
 import Image from 'next/image'
 import RingPattern from '../assets/RingPattern'
 import CirclePattern from '../assets/CirclePattern'
 import content from '../../data/data.json'
+import { motion } from 'motion/react'
 
 const Hero = () => {
   const data = content.hero.intro
@@ -11,14 +14,30 @@ const Hero = () => {
     <section id='hero'>
       <div className='container'>
         <div className='content'>
-          <h1 className='title'>
+          <motion.h1
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.4,
+              scale: { type: 'spring', visualDuration: 0.4, bounce: 0.5 },
+            }}
+            className='title'
+          >
             {data.first_line}
             <span className='author--name'>{data.second_line}</span>
-          </h1>
+          </motion.h1>
 
-          <div className='description'>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.4,
+              scale: { type: 'spring', visualDuration: 0.4, bounce: 0.5 },
+            }}
+            className='description'
+          >
             <p>{data.description}</p>
-          </div>
+          </motion.div>
 
           <BtnGreenBar text={'contact me'} type={'link'} link='#footer' />
         </div>
