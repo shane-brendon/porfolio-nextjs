@@ -41,7 +41,15 @@ const Hero = () => {
 
           <BtnGreenBar text={'contact me'} type={'link'} link='#footer' />
         </div>
-        <div className='profile-picture'>
+        <motion.div
+          className='profile-picture'
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.4,
+            scale: { type: 'spring', visualDuration: 0.4, bounce: 0.5 },
+          }}
+        >
           <picture>
             <source
               media='(max-width: 640px)'
@@ -64,7 +72,7 @@ const Hero = () => {
               </div>
             </div>
           </picture>
-        </div>
+        </motion.div>
       </div>
       <div className='ringPattern__hero'>
         <div className='ringPattern__hero--container'>
