@@ -10,6 +10,7 @@ const BtnGreenBar = ({ text, type, link = '/', blank = false }) => {
     <motion.div
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
+      whileHover={{rotate: "-3deg"}}
       transition={{
         duration: 0.4,
         scale: { type: 'spring', visualDuration: 0.4, bounce: 0.5 },
