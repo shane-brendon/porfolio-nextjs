@@ -12,8 +12,8 @@ const BtnGreenBar = ({ text, type, link = '/', blank = false }) => {
       animate={{ opacity: 1, x: 0 }}
       whileHover={{rotate: "-3deg"}}
       transition={{
-        duration: 0.4,
-        scale: { type: 'spring', visualDuration: 0.4, bounce: 0.5 },
+        duration: 0.1,
+        scale: { type: 'spring', visualDuration: 0.5, bounce: 0.9 },
       }}
       className='btn--greenBar'
     >
@@ -28,7 +28,7 @@ const BtnGreenBar = ({ text, type, link = '/', blank = false }) => {
         </Link>
       )}
     </motion.div>
-  )
+  ) 
 }
 
 export default BtnGreenBar

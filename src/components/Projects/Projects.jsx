@@ -1,13 +1,23 @@
+'use client'
+
 import './Projects.scss'
 import content from '../../data/data.json'
 import Image from 'next/image'
 import BtnGreenBar from '../../lib/BtnGreenBar/BtnGreenBar'
-
+import { motion } from 'motion/react'
 const Projects = () => {
   const { global, projects } = content
   return (
     <section id='project-component'>
-      <div className='container'>
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: 0.4,
+          scale: { type: 'spring', visualDuration: 0.4, bounce: 0.5 },
+        }}
+        className='container'
+      >
         <div className='project-title'>
           <h2 className='title'>{projects.title}</h2>
           <BtnGreenBar
@@ -18,7 +28,16 @@ const Projects = () => {
         </div>
         <div className='project-grid'>
           {projects.projects.map((project, index) => (
-            <div key={index}>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              whileHover={{ rotate: '-3deg' }}
+              transition={{
+                duration: 0.1,
+                scale: { type: 'spring', visualDuration: 0.5, bounce: 0.9 },
+              }}
+              key={index}
+            >
               <div className='img-container'>
                 <div className='buttons-hover desktop'>
                   <BtnGreenBar
@@ -64,10 +83,10 @@ const Projects = () => {
                   blank
                 />
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
