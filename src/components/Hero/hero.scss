@@ -6,12 +6,10 @@
     position: relative;
   }
   .profile-picture {
-    overflow: hidden;
-  }
-  .profile-picture  {
     position: absolute;
     top: -13.125rem;
     right: 0;
+    overflow: visible;
   }
 
   .content {
@@ -60,8 +58,13 @@
   }
   .circlePattern__hero {
     position: absolute;
-    left: 1rem;
+    left: 0;
     bottom: 6rem;
+
+    svg {
+      left: -50%;
+      position: relative;
+    }
   }
   @media screen and (max-width: $tablet) {
     .content {
@@ -69,7 +72,7 @@
       position: relative;
       top: -3.125rem;
     }
- 
+
     h1 {
       font-size: 4.5rem;
     }
@@ -118,8 +121,9 @@
       font-size: 1rem;
       padding-bottom: 2rem;
     }
-    .profile-picture img {
+    .profile-picture {
       z-index: 1;
+      position: static;
     }
     .author--name {
       -webkit-text-stroke: unset;

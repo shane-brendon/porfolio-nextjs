@@ -52,18 +52,11 @@
   },
   "skills": [
     {
-      "text": "HTML",
+      "text": "React",
       "experience": "2"
-    },    {
+    },
+    {
       "text": "NEXTJS",
-      "experience": "2"
-    },
-    {
-      "text": "CSS",
-      "experience": "2"
-    },
-    {
-      "text": "Javascript",
       "experience": "2"
     },
     {
@@ -71,51 +64,60 @@
       "experience": "2"
     },
     {
-      "text": "React",
+      "text": "Sass",
       "experience": "2"
     },
     {
-      "text": "Sass",
+      "text": "TailwindCSS",
+      "experience": "0.5"
+    },
+    {
+      "text": "Drupal CMS",
+      "experience": "2"
+    },
+    {
+      "text": "Headless",
       "experience": "2"
     }
+
   ],
   "projects": {
     "title": "Projects",
     "projects": [
       {
-        "name": "ENTERTAINMENT WEB APP",
+        "name": "MY PORTFOLIO",
         "technology": ["HTML", "Css", "Javascript"],
         "image": {
           "large": "/images/thumbnail-project-4-large.webp",
           "small": "/images/thumbnail-project-4-large.webp"
         },
         "links": {
-          "project": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-          "code": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          "project": "https://porfolio-nextjs-sepia.vercel.app/",
+          "code": "https://github.com/shane-brendon/porfolio-nextjs"
         }
       },
       {
-        "name": "MEMORY GAME",
+        "name": "FINANCE TRACKER",
         "technology": ["HTML", "Css", "Javascript"],
         "image": {
           "large": "/images/thumbnail-project-5-large.webp",
           "small": "/images/thumbnail-project-5-large.webp"
         },
         "links": {
-          "project": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-          "code": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          "project": "https://mira-green.vercel.app/",
+          "code": "https://github.com/shane-brendon/MIRA"
         }
       },
       {
-        "name": "ART GALLERY SHOWCASE",
+        "name": "VANS SALON",
         "technology": ["HTML", "Css", "Javascript"],
         "image": {
           "large": "/images/thumbnail-project-6-large.webp",
           "small": "/images/thumbnail-project-6-large.webp"
         },
         "links": {
-          "project": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-          "code": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          "project": "https://vans-beauty.vercel.app/",
+          "code": "https://github.com/shane-brendon/vans"
         }
       }
     ],
