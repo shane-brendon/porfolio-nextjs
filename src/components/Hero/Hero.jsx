@@ -51,14 +51,14 @@ const Hero = () => {
           }}
         >
           <picture>
-            <source
+            {/* <source
               media='(max-width: 640px)'
               srcSet={data.images.mobile.url}
             />
             <source
               media='(max-width: 821px)'
               srcSet={data.images.tablet.url}
-            />
+            /> */}
             <Image
               src={data.images.desktop.url}
               alt='Profile picture'

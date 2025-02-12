@@ -88,8 +88,8 @@
         "name": "MY PORTFOLIO",
         "technology": ["HTML", "Css", "Javascript"],
         "image": {
-          "large": "/images/thumbnail-project-4-large.webp",
-          "small": "/images/thumbnail-project-4-large.webp"
+          "large": "/images/portfolio.png",
+          "small": "/images/portfolio.png"
         },
         "links": {
           "project": "https://porfolio-nextjs-sepia.vercel.app/",
@@ -100,8 +100,8 @@
         "name": "FINANCE TRACKER",
         "technology": ["HTML", "Css", "Javascript"],
         "image": {
-          "large": "/images/thumbnail-project-5-large.webp",
-          "small": "/images/thumbnail-project-5-large.webp"
+          "large": "/images/mira.png",
+          "small": "/images/mira.png"
         },
         "links": {
           "project": "https://mira-green.vercel.app/",
@@ -112,8 +112,8 @@
         "name": "VANS SALON",
         "technology": ["HTML", "Css", "Javascript"],
         "image": {
-          "large": "/images/thumbnail-project-6-large.webp",
-          "small": "/images/thumbnail-project-6-large.webp"
+          "large": "/images/vans.png",
+          "small": "/images/vans.png"
         },
         "links": {
           "project": "https://vans-beauty.vercel.app/",
