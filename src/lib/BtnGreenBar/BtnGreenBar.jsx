@@ -5,7 +5,7 @@ import Link from 'next/link'
 import content from '../../data/data.json'
 import { motion } from 'motion/react'
 
-const BtnGreenBar = ({ text, type, link = '/', blank = false }) => {
+const BtnGreenBar = ({ text, type, link = '/', blank = false, dl=false }) => {
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}
@@ -23,7 +23,7 @@ const BtnGreenBar = ({ text, type, link = '/', blank = false }) => {
         </button>
       )}
       {type === 'link' && (
-        <Link href={link} target={blank ? '_blank' : ''}>
+        <Link href={link} target={blank ? '_blank' : ''} download={dl}>
           {text}
         </Link>
       )}

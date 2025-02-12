@@ -44,7 +44,7 @@ const Projects = () => {
                     text={projects.external.project}
                     type={'link'}
                     link={project.links.project}
-                    blank
+                    blank={project.links.blank}
                   />
                   <BtnGreenBar
                     text={projects.external.code}

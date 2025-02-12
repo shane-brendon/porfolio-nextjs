@@ -39,7 +39,15 @@ const Hero = () => {
             <p>{data.description}</p>
           </motion.div>
 
-          <BtnGreenBar text={'contact me'} type={'link'} link='#footer' />
+          <div className='cv-btn'>
+            <BtnGreenBar
+              text={'Download My Resumer'}
+              type={'link'}
+              link='/pdf/shane-resumer.pdf'
+              blank
+              dl
+            />
+          </div>
         </div>
         <motion.div
           className='profile-picture'

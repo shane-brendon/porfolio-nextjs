@@ -79,7 +79,6 @@
       "text": "Headless",
       "experience": "2"
     }
-
   ],
   "projects": {
     "title": "Projects",
@@ -92,8 +91,9 @@
           "small": "/images/portfolio.png"
         },
         "links": {
-          "project": "https://porfolio-nextjs-sepia.vercel.app/",
-          "code": "https://github.com/shane-brendon/porfolio-nextjs"
+          "project": "/",
+          "code": "https://github.com/shane-brendon/porfolio-nextjs",
+          "blank": false
         }
       },
       {
@@ -105,7 +105,8 @@
         },
         "links": {
           "project": "https://mira-green.vercel.app/",
-          "code": "https://github.com/shane-brendon/MIRA"
+          "code": "https://github.com/shane-brendon/MIRA",
+          "blank": true
         }
       },
       {
@@ -117,7 +118,8 @@
         },
         "links": {
           "project": "https://vans-beauty.vercel.app/",
-          "code": "https://github.com/shane-brendon/vans"
+          "code": "https://github.com/shane-brendon/vans",
+          "blank": true
         }
       }
     ],

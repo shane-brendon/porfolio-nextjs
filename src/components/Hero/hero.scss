@@ -16,7 +16,14 @@
       object-fit: contain;
     }
   }
+  .cv-btn {
+    margin-top: 2rem;
 
+    + a {
+      margin-top: 4rem;
+      display: inline-block;
+    }
+  }
   .content {
     max-width: 44.3125rem;
     position: relative;
