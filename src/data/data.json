@@ -86,7 +86,7 @@
     "projects": [
       {
         "name": "MY PORTFOLIO",
-        "technology": ["HTML", "Css", "Javascript"],
+        "technology": ["Nextjs", "Sass", "Framer Motion"],
         "image": {
           "large": "/images/portfolio.png",
           "small": "/images/portfolio.png"
@@ -98,7 +98,7 @@
       },
       {
         "name": "FINANCE TRACKER",
-        "technology": ["HTML", "Css", "Javascript"],
+        "technology": ["Shadcn ui", "TailwindCSS", "Nextjs", "Supabase"],
         "image": {
           "large": "/images/mira.png",
           "small": "/images/mira.png"
@@ -110,7 +110,7 @@
       },
       {
         "name": "VANS SALON",
-        "technology": ["HTML", "Css", "Javascript"],
+        "technology": ["Next", "Sass", "CSS Modules", "Shadcn ui"],
         "image": {
           "large": "/images/vans.png",
           "small": "/images/vans.png"
