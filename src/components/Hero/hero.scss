@@ -11,6 +11,10 @@
     right: 0;
     overflow: visible;
     filter: grayscale(0.8);
+
+    img {
+      object-fit: contain;
+    }
   }
 
   .content {
