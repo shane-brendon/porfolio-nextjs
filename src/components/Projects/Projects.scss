@@ -82,7 +82,7 @@
     }
     @media screen and (max-width: $mobile) {
       grid-template-columns: 1fr;
-      gap: 2.5rem;
+      gap: 3.75rem;
       .img-container {
         &:hover {
           .buttons-hover {
