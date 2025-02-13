@@ -97,7 +97,7 @@
         }
       },
       {
-        "name": "FINANCE TRACKER",
+        "name": "MIRA FINANCE TRACKER",
         "technology": ["Shadcn ui", "TailwindCSS", "Nextjs", "Supabase"],
         "image": {
           "large": "/images/mira.png",
