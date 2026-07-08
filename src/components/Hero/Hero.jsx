@@ -41,9 +41,9 @@ const Hero = () => {
 
           <div className='cv-btn'>
             <BtnGreenBar
-              text={'Download My Resumer'}
+              text={'Download My Resume'}
               type={'link'}
-              link='/pdf/shane-resumer.pdf'
+              link='/pdf/shane-resume.pdf'
               blank
               dl
             />

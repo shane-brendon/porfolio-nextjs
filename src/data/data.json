@@ -13,7 +13,7 @@
       },
       "linkedIn": {
         "icon": "/images/icon-linkedin.svg",
-        "link": "https://mu.linkedin.com/in/shane-ramah-naik-50b023250?trk=people-guest_people_search-card",
+        "link": "https://mu.linkedin.com/in/shane-ramah-naik-50b033350?trk=people-guest_people_search-card",
         "active": true
       },
       "twitter": {
@@ -33,7 +33,7 @@
     "intro": {
       "first_line": "Nice to meet you! i'm",
       "second_line": " Shane",
-      "description": "Based in Mauritius, I’m a front-end developer with 2 years in the trade, im passionate about building accessible web apps that users love.",
+      "description": "Based in Mauritius, I’m a front-end developer with 3 years in the trade, im passionate about building accessible web apps that users love.",
       "images": {
         "mobile": {
           "url": "/images/image-profile-mobile.webp",
@@ -53,31 +53,48 @@
   "skills": [
     {
       "text": "React",
-      "experience": "2"
+      "experience": "3"
     },
     {
       "text": "NEXTJS",
-      "experience": "2"
+      "experience": "3"
     },
     {
       "text": "Jquery",
-      "experience": "2"
+      "experience": "3"
     },
     {
       "text": "Sass",
-      "experience": "2"
+      "experience": "3"
     },
     {
       "text": "TailwindCSS",
-      "experience": "0.5"
+      "experience": "3"
     },
     {
       "text": "Drupal CMS",
-      "experience": "2"
+      "experience": "3"
     },
     {
       "text": "Headless",
-      "experience": "2"
+      "experience": "3"
+    },
+    {
+      "text": "Python",
+      "experience": "3"
+    },
+    {
+      "text": "Django",
+      "experience": "3"
+    },
+
+    {
+      "text": "Mysql",
+      "experience": "3"
+    },
+    {
+      "text": "MongoDb",
+      "experience": "3"
     }
   ],
   "projects": {
